@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Zen+Antique+Soft&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+nav{
+    background-color: rgb(195, 195, 238);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+}
+
+nav ul{
+    list-style: none; 
+}
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.container{
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw) ;
+    font-family: 'Oswald', sans-serif;
+}
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+.box{
+    border: 2px solid rgb(55, 90, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 9vw;
+}
+.box:hover{
+    background-color: rgb(212, 212, 241);
+    cursor: pointer;
+}
+.gameinfo{
+    padding: 25px;
+    margin: 25px;
+    font-family: 'Zen Antique Soft', serif;
+    font-size: 25px;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+button{
+    padding: 5px;
+    margin-left: 24px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: unset;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+
+}
+button:hover {background-color: #3e8e41}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.btinfo{
+    margin-top: 25px;
+}
+@media screen and (max-width : 1100px){
+    
+        .gameContainer{
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+        .gameinfo{
+            margin-top: 34px;
+        }
+        .gameinfo h1{
+            font-size: 1.5rem;
+        }
+}
