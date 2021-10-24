@@ -90,12 +90,22 @@ button:active {
     
         .gameContainer{
             flex-wrap: wrap;
-            margin-top: 50px;
+            margin-top: 30px;
         }
         .gameinfo{
             margin-top: 34px;
         }
         .gameinfo h1{
-            font-size: 1.5rem;
+            font-size: 1rem;
+        }
+        .container{
+            margin-right: 20px;
+            grid-template-rows: repeat(3,22vw);
+            grid-template-columns: repeat(3,22vw) ;
+            
+        }
+        nav{
+            height: 30px;
+            font-size: 22px;
         }
 }
